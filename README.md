@@ -22,7 +22,7 @@ AgentCheckout is that loop — demoable end-to-end.
 
 ## Live demo
 
-- **App:** _deploying — see latest Vercel URL in repo About / this README after deploy_
+- **App:** https://paypal-agentcheckout.vercel.app
 - **Health:** `/api/status` reports `paypalMode` (`mock` | `sandbox`) and `aiMode` (`llm` | `heuristic`)
 
 > Without PayPal sandbox credentials the UI runs in a **clearly labeled Mock / demo mode** so judges can still complete the full flow. With `PAYPAL_CLIENT_ID` + `PAYPAL_CLIENT_SECRET`, it hits PayPal sandbox Orders v2 + JS SDK buttons.
