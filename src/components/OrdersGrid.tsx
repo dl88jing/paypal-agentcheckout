@@ -104,6 +104,11 @@ export function OrdersGrid() {
           {loading ? "Refreshing…" : "Refresh"}
         </button>
       </div>
+      {rows.length === 0 && !loading && (
+        <p className="rounded-xl border border-dashed border-white/15 bg-slate-950/40 px-4 py-3 text-sm text-slate-400">
+          No agent orders yet in this server instance. Run a checkout on the Agent page — orders are kept in-memory per deployment instance for the demo.
+        </p>
+      )}
       <div className="h-[480px] w-full overflow-hidden rounded-2xl border border-white/10">
         <AgGridReact
           theme={themeQuartz}

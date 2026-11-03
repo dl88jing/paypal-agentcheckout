@@ -45,3 +45,4 @@ next-env.d.ts
 
 # gitleaks
 gitleaks-report.json
+.env*
